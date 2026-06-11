@@ -1,12 +1,16 @@
-# Entorno virtual
+# Python (Filtra entorno virtual y caché)
 venv/
-env/
 .venv/
-
-# Caché de Python
 __pycache__/
 *.pyc
 
-# Variables de entorno y base de datos local (si aplica)
-.env
-*.db
+# Flutter / Dart (Filtra compilados, binarios y herramientas)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+build/
+android/.gradle/
+android/app/protobuf/
+ios/.generated/
+windows/flutter/ephemeral/
