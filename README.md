@@ -3,11 +3,11 @@ Estructuras
 Frases
 Canciones
 
-#DB
+# DB
 PostgreSQL
 
-#Backend
+# Backend
 Python
 
-#frontend
+# Frontend
 Flutter
