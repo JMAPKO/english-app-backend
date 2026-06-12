@@ -15,8 +15,8 @@ if DATABASE_URL:
     if DATABASE_URL.startswith("postgres://"):
         DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 else:
-# CONFIGURACIÓN: Cambiá 'tu_contraseña' por la que usás para entrar a pgAdmin
-DATABASE_URL = "postgresql://postgres:0000@localhost:5432/EnglishApp"
+    # CONFIGURACIÓN: Cambiá 'tu_contraseña' por la que usá para entrar a pgAdmin
+    DATABASE_URL = "postgresql://postgres:0000@localhost:5432/EnglishApp"
 
 # El engine es el motor encargado de gestionar las conexiones
 engine = create_engine(DATABASE_URL)
