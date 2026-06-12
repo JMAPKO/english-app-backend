@@ -1,10 +1,20 @@
 #(Maneja la conexión a Postgres)
 
 
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+
+#Servidor web render
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    if DATABASE_URL.startswith("postgres://"):
+        DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
+else:
 # CONFIGURACIÓN: Cambiá 'tu_contraseña' por la que usás para entrar a pgAdmin
 DATABASE_URL = "postgresql://postgres:0000@localhost:5432/EnglishApp"
 
